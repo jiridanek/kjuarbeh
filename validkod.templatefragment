@@ -1,0 +1,12 @@
+<section>
+<h3>{Status}</h3>
+
+{ .section Error}
+<h4>Poznámka: {Error|html}</h4>
+{ .end}
+
+<p>Na vaše konto vám bylo připsáno {Body_plus}&nbsp;bodů. Nyní máte celkem {Body_total}&nbsp;bodů.</p>
+
+<p>Další kód můžete buď naskenovat, nebo zadat do formuláře dole</p>
+</section>
+<hr>

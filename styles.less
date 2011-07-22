@@ -1,0 +1,282 @@
+@import "/static/cssreset.css";
+
+.rounded_corners (@radius: 5px) {
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+
+form {
+ text-align: right;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#C45C00), color-stop(.9,#DE760D));
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+
+fieldset {
+text-align: left;
+  border: 2px groove threedface;
+  //border-color: darkorange;
+  //background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#D66400), color-stop(.9,#CF694A));
+  margin:0.5em;
+  padding:0.7em;
+  //background: #EE7942;
+  
+  input {
+    margin-left: 0.4em;
+   }
+  
+}
+}
+
+#send {
+  font-size: 120%;
+  .headerfont();
+  color: #eee;
+  border: 1px dotted orange;
+  box-shadow: 2px 2px 2px #000;
+ background-color: darkorange;
+ margin-right: 1.8em;
+ padding:0.1em 0.3em 0.1em 0.3em;
+ .rounded_corners(2px);
+
+}
+@font-face {
+    font-family: "TeX Gyre Heros";
+    src: url('./texgyreheros-regular.otf');
+}
+
+@font-face {
+    font-family: "TeX Gyre Heros Bold";
+    src: url('./texgyreheros-bold.otf');
+}
+
+
+.bodyfont() {
+  font-family: "TeX Gyre Heros", Helvetica;
+}
+
+.headerfont() {
+  font-family: "TeX Gyre Heros Bold", Helvetica;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #aaa;
+}
+
+.center(@width) {
+  width: @width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.unselectable() {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  
+   -webkit-user-drag: none; -moz-user-drag: none; user-drag: none;
+}
+
+@media all and (max-width: 600px) {
+	body {
+		width: 100% !important;
+	}
+	section, article {
+		margin-left:10px !important; 
+		margin-right:10px !important;
+	}
+}
+
+@media all and (max-width: 600px) {  
+body{
+header {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    nav {
+    margin-top: 0.5em;
+    }
+}
+}
+}
+
+@media all and (min-width: 601px) {  
+body{
+header {
+    position: relative;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    .center(30em);
+    h2 {
+      position: relative;
+      display: inline-block;
+      margin-left:1em;
+      top: -1em;
+    }
+    nav{
+    position: absolute;
+    left: @imgwidth + 30px;
+    top: @imgheight / 1.5;
+    display: inline-block;
+    //max-width: 20em;
+    }
+}
+}
+}
+
+/* handheld je archaismus, nikdo nepodporuje */
+@media screen and (min-width: 601) {
+body {
+header {
+nav {
+      a:hover span {
+        border-bottom: 5px solid #cf0;
+    	
+    }
+
+}
+}
+article, section{
+    a:hover {
+      border-bottom: 1px solid steelblue;
+    }
+    }
+}
+}
+//@bgcolor: ;
+
+@imgwidth: 102px;
+@imgheight: 40px;
+
+body {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  
+      a {
+      text-decoration: none;
+    }
+  
+  h1, h2, h3, h4, h5, h6 {
+    .headerfont();
+    letter-spacing: 1px;
+    clear:both;
+    text-shadow: 8px 8px 8px #eee;
+  }
+  
+  h6 {
+    display: inline;
+    color: black;
+    text-shadow: 2px 2px 2px #ddd;
+  }
+  
+  h5 {
+  
+  }
+  
+  h4 {
+    font-size: 100% * 1.2;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+  }
+  
+  h3 {
+    font-size: 100% * 1.5;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+  
+  h2 {
+    font-size: 100% * 1.7;
+  }
+  
+  h1 {
+    font-size: 100% * 2;
+  }
+  
+  hr {
+    border-color: orange;
+    color:orange;
+    background-color: orange;
+  }
+
+header {
+  nav {
+    min-width:15em;
+     ul {
+       top:0.25em;  
+     }
+   }
+ }
+
+nav {
+    height: 1.5em;
+    font-size: 100% * 1.2;
+    .headerfont();
+    border: 1px solid;
+    border-color: orange;
+    .rounded_corners();
+    background-color: darkorange;
+    
+    * {
+      .unselectable();
+    }
+    
+    a span {
+      color: white;
+    }
+    ul {
+      margin: 0px 0px 0px 0px !important;
+      list-style-type: none !important;
+      display:inline;
+      position:relative;
+      top:0.25em;
+
+      li {
+        display: inline;
+        padding-left:0.5em;
+        padding-right:0.5em;
+      }
+    }
+  }
+      
+  article, section{
+
+    nav{
+display: inline;
+float: right;
+}
+    
+    ul {
+      margin: 1em 0 1em 2em; padding: 0;
+      list-style: circle;
+      color: green;
+    }
+    
+    p {
+      .bodyfont();
+      margin-top: 0.5em;
+      margin-bottom:1em;
+      line-height: 100% * 1.4;
+      color: black;
+    }
+    
+    span {
+        .bodyfont();
+      line-height: 100% * 1.4;
+      color: black;  
+    }
+  }    
+
+footer {
+  text-align: center;
+}
+
+nav#spodni {
+  text-align: center;
+  * {
+  display:block;
+  }
+}
+  
+}

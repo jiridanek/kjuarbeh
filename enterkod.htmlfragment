@@ -1,0 +1,18 @@
+<section>
+<p>Máte-li internet v mobilu, jednoduše navštivte odkaz, který vám čtečka dekóduje.</p>
+
+<p>Pokud internet v mobilu nemáte, můžete využít tento formulář, kam rovnou vyplníte kromě kódu ještě e-mail, nebo UČO</p>
+
+<form method="post">
+<fieldset>
+<legend><h6>Zadejte vaše UČO nebo e-mailovou adresu</h6></legend>
+<input field="" />
+</fieldset>
+<fieldset>
+<legend><h6>Kód z kjů-áru, /kod/XXXX</h6></legend>
+<input field="" />
+</fieldset>
+
+<input id="send" type="submit" alt=Oddeslatd>
+</form>
+</section>

@@ -1,0 +1,53 @@
+<!--
+<section>
+<h2>OBSAH</h2>
+<ul>
+<li>a</li>
+<li>b</li>
+</ul>
+</section>
+-->
+
+<article>
+<h3>Aktuálně:</h3>
+21. 10. 2011, 10.00 - 11.15
+<p><a href="">| Organizační pokyny</a> ][ <a href="">Výsledky |</a></p>
+<p>Univerzitní kampus Bohunice,
+při projekci filmu PHD Movie</p>
+
+<!--
+<nav>
+<ul>
+<a href="#"><li><span>[Organizační pokyny]</span></li></a>| <a href="#"><li><span>[Výsledky]</span></li></a>
+</ul>
+</nav>
+-->
+
+
+<!--
+<h3>Archív:</h3>
+zatím nic, šedě
+-->
+
+</article>
+<article>
+<h3>Základní informace:</h3>
+
+<p>Ke hře potřebujete „chytrý” mobilní telefon a přípojení na internet.</p>
+
+<h4>O co jde</h4>
+<p>Ve vymezeném prostoru je ukryto množství kartiček s QR kódy, ve kterých jsou zakódované webové adresy. Úkolem hráčů je tyto kartičky najít, kód dekódovat vhodnou čtečkou QR kódů a navštívit webovou adresu. Za každou adresu dostáváte body.</p>
+
+<p>Vyhrává ten, kdo bodů získá nejvíce (v případě shody má přednost ten nejrychlejší).</p>
+</article>
+
+<article>
+<h4>Čtečky QR kódů</h4>
+<ul>
+<li><h6>Android</h6><span>: Barcode Reader (ZXing)</span></li>
+<li><h6>iPhone</h6><span>: Barcode Reader (ZXing)</span></li>
+<li><span>multiplatformní Barcode Reader (ZXing)</span></li>
+</ul>
+<p>a mnohé další</p>
+
+</article>
