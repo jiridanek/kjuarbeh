@@ -1,4 +1,4 @@
-package main
+package kjuarbeh
 
 import (
 	"fmt"
@@ -112,7 +112,8 @@ func setCookie(w http.ResponseWriter, r *http.Request) {
 	
 }
 
-func main() {
+/* Misto main, kdyz se pouzije app engine */
+func init() {
 
 	http.HandleFunc("/", newFragmentHandler("uvod.htmlfragment"))
 	http.HandleFunc("/uvod/", newFragmentHandler("uvod.htmlfragment"))
@@ -120,9 +121,11 @@ func main() {
 	http.HandleFunc("/kod/", handleScanKod)
 	http.HandleFunc("/cookie/", setCookie)
 	http.Handle("/static/", http.FileServer("./static/", "/static/"))
-	if err := http.ListenAndServe("192.168.1.102:8080", nil); err != nil {
-		fmt.Println("Error: " + err.String())
-	}
+
+// /* Resi appengine sam */	
+//	if err := http.ListenAndServe("192.168.1.102:8080", nil); err != nil {
+//		fmt.Println("Error: " + err.String())
+//	}
 }
 
 type QRCode struct {
