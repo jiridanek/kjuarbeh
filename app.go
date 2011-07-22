@@ -119,7 +119,7 @@ func main() {
 	http.HandleFunc("/pravidla/", newFragmentHandler("pravidla.htmlfragment"))
 	http.HandleFunc("/kod/", handleScanKod)
 	http.HandleFunc("/cookie/", setCookie)
-	http.Handle("/static/", http.FileServer(".", "/static/"))
+	http.Handle("/static/", http.FileServer("./static/", "/static/"))
 	if err := http.ListenAndServe("192.168.1.102:8080", nil); err != nil {
 		fmt.Println("Error: " + err.String())
 	}
