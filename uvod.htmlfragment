@@ -36,7 +36,7 @@ zatím nic, šedě
 <p>Ke hře potřebujete „chytrý” mobilní telefon a přípojení na internet.</p>
 
 <h4>O co jde</h4>
-<p>Ve vymezeném prostoru je ukryto množství kartiček s QR kódy, ve kterých jsou zakódované webové adresy. Úkolem hráčů je tyto kartičky najít, kód dekódovat vhodnou čtečkou QR kódů a navštívit webovou adresu. Za každou adresu dostáváte body.</p>
+<img src="static/kjuar.png"><p>Ve vymezeném prostoru je ukryto množství kartiček s QR kódy, ve kterých jsou zakódované webové adresy. Úkolem hráčů je tyto kartičky najít, kód dekódovat vhodnou čtečkou QR kódů a navštívit webovou adresu. Za každou adresu dostáváte body.</p>
 
 <p>Vyhrává ten, kdo bodů získá nejvíce (v případě shody má přednost ten nejrychlejší).</p>
 </article>
